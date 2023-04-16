@@ -34,7 +34,7 @@ class Book(db.Model):
 def index():
     return 'Connection To Database Is Functioning'
 
-#get all bboks in database
+#get all books in database
 @app.route('/books')
 def get_books():
     books = Book.query.all()
